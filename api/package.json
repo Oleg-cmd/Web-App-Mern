@@ -1,0 +1,37 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node ./bin/www",
+    "server": "nodemon ./bin/www",
+    "client": "yarn --cwd ../client start",
+    "clientn": "npm --prefix./client run start",
+    "client:install": "yarn install --cwd ../client",
+    "clientn:install": "npm install --prefix ../client",
+    "client:build": "yarn --cwd ../client build",
+    "clientn:build": "npm run build --prefix ../client ",
+    "dev": "cross-env NODE_ENV=development concurrently \"yarn server\" \"yarn client\" ",
+    "devn": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\" "
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "concurrently": "^6.0.0",
+    "config": "^3.3.6",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "~1.4.4",
+    "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "fs-extra": "^9.1.0",
+    "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "password-validator": "^5.1.1"
+  }
+}

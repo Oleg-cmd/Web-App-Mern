@@ -1,0 +1,7 @@
+{
+    "port": 5000,
+    "jwt": "",
+    "mongoUri": "",
+    "baseUrl": "http://localhost:5000",
+    "cookieKey":"7.`hQtLZwLefM8?Db"
+  }
